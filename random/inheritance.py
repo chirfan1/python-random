@@ -1,6 +1,12 @@
-def say_hello(nama):
-    print(f"Hello {nama}")
+class person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"Hallo {self.name}, {self.age}"
 
 
-say_hello("Xaxaxa")
+p1 = person("xaxaxa", 24)
 
+print(p1)
