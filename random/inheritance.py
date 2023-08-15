@@ -3,10 +3,9 @@ class person:
         self.name = name
         self.age = age
 
-    def __str__(self):
-        return f"Hallo {self.name}, {self.age}"
+    def say_hello(self):
+        print(f"Hallo, {self.name}")
 
+p1 = person("xaxaxa", 13)
 
-p1 = person("xaxaxa", 24)
-
-print(p1)
+p1.say_hello()
